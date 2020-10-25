@@ -1,0 +1,51 @@
+#replies-tweet-header{
+    display: grid;
+    grid-template-areas: 
+    'pic text';
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(2, min-content);
+}
+
+
+#replies-tweet-header-text{
+    padding-top:10px;
+}
+
+#replies-tweet-content{
+    padding-top:15px;
+    font-size: larger;
+}
+
+#replies-tweet-time{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.horizontal-line-break{
+    border-top: 1px solid rgb(56, 68, 77);
+}
+
+.replies-engagement{
+    padding: 15px 0 15px 0;
+}
+
+.replies-engagement > span{
+    padding-right: 20px;
+}
+
+#tweet-your-reply{
+    background-color: #253341;
+    border-radius: 24px;
+    padding: 5px;
+    color: rgb(136, 153, 166);
+    margin-bottom: 20px;
+}
+#tweet-your-reply:hover{
+    cursor: pointer;
+}
+
+#tweet-your-reply-text{
+    position: relative;
+    top:-5px;
+    left: 15px;
+}

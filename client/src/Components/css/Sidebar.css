@@ -1,0 +1,165 @@
+.sidebar-container{
+    padding-top: 20px;
+    float: right;
+}
+
+.sidebar-container-element{
+    padding: 15px 10px 0px 10px;
+    font-size: 22px;
+    list-style: none;
+}
+
+.sidebar-button{
+    background-color: transparent;
+    padding: 5px 20px 5px 20px;
+    border-bottom: 3px solid transparent;
+    color:white;
+    font-weight: 600;
+}
+
+.tweet-button{
+    background-color: rgb(29, 161, 242);
+    border-radius: 24px;
+    padding:10px 100px 10px 100px;
+    color:white;
+    font-weight: 600;
+}
+
+.sidebar-button:hover{
+    color: rgb(29, 170, 254);
+    background-color: rgb(22, 45, 64);
+    border-radius: 24px;
+    border-bottom: 3px solid;
+}
+
+.tweet-button:hover{
+    background-color: rgb(27, 113, 167);
+}
+
+.tweet-plus-icon{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .side-bar-text{
+        display:none;
+    }
+    .tweet-button{
+        padding:0px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-left: 3px;
+    }
+    .tweet-plus-icon{
+        display:block;
+    }
+    ul{
+        padding:0;
+    }
+
+    .sidebar-button{
+        padding:0px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}
+
+#sidebar-moremenu{
+    box-shadow: 0 0 20px #384955;
+    width: 200px;
+    position: fixed;
+    background-color:rgb(21, 32, 43);
+    display: none;
+    z-index: 9;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.sidebar-moremenu-button{
+    padding:13px;
+    font-weight: 400;
+    color:white;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar-moremenu-button:hover{
+    background-color: rgb(25, 39, 52);
+    transition: 0.2s;
+    color: rgb(29, 170, 254);
+}
+
+.sidebar-moremenu-element{
+    width: 100%;
+}
+
+.sidebar-moremenu-break{
+    border-top: 1px solid rgb(56, 68, 77);
+}
+
+#sidebar-moremenu-clickoffdiv{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: transparent;
+    z-index: -100;
+    cursor: default;
+}
+
+#sidebar-moremenu-lists{
+    display: none;
+}
+
+#sidebar-moremenu-bookmarks{
+    display: none;
+}
+
+#sidebar-moremenu-notifications{
+    display: none;
+}
+
+#sidebar-moremenu-messages{
+    display: none;
+}
+
+@media (max-height: 630px){
+    #sidebar-lists{
+        display: none;
+    }
+    #sidebar-moremenu-lists{
+        display: block;
+    }
+    
+}
+
+@media (max-height: 565px){
+    #sidebar-bookmarks{
+        display: none;
+    }
+    #sidebar-moremenu-bookmarks{
+        display: block;
+    }
+}
+
+@media (max-height: 505px){
+    #sidebar-messages{
+        display: none;
+    }
+    #sidebar-moremenu-messages{
+        display: block;
+    }
+}
+
+@media (max-height: 436px){
+    #sidebar-notifications{
+        display: none;
+    }
+    #sidebar-moremenu-notifications{
+        display: block;
+    }
+}

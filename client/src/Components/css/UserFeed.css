@@ -1,0 +1,29 @@
+.feed-buttons{
+    display: grid;
+    grid-template-columns: 1fr fit-content(100ch) 1fr 1fr;
+    border-right: 1px solid rgb(56, 68, 77);
+    border-left: 1px solid rgb(56, 68, 77);
+}
+
+.feed-button{
+    background-color: transparent;
+    padding:15px;
+    color: rgb(136, 153, 166);
+}
+
+.feed-button:hover{
+    color: rgb(29, 170, 254);
+    background-color: rgb(22, 45, 64);
+    transition: 0.3s;
+}
+
+.feed-tweets-button{
+    border-bottom: 2px solid rgb(29, 170, 254);
+    color:rgb(29, 170, 254);
+}
+
+#feed-loading{
+    min-width:600px;
+    height: 100vh;
+    border: 1px solid rgb(56, 68, 77);
+}

@@ -1,0 +1,52 @@
+.tweet{
+    border: 1px solid rgb(56, 68, 77);
+    border-bottom: none;
+    padding:10px;
+    white-space: pre-wrap;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: 
+    "retweeted retweeted"
+    "pic content"
+    ;
+}
+
+.text-bolder{
+    font-weight: 700;
+}
+
+.engagement-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tweet-profile-picture{
+    grid-area: pic;
+    float:left;
+    overflow: hidden;
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+    margin-right: 15px;
+    margin-top: 6px;
+}
+
+.tweet-profile-picture-small{
+    grid-area: pic;
+    float:left;
+    overflow: hidden;
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+    margin-right: 15px;
+    margin-top: 6px;
+}
+
+#retweeted_by_message{
+    grid-area: retweeted;
+    float: left;
+    color:rgb(136, 153, 166);
+    font-size: 14px;
+    padding-left: 5%;
+}

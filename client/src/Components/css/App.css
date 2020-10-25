@@ -1,0 +1,48 @@
+.App {
+  background-color:rgb(21, 32, 43);
+  color:white
+}
+
+*{
+  scrollbar-color:  
+    rgb(72, 100, 126) 
+    rgb(21, 32, 43)
+}
+
+button{
+    border:0;
+    outline: none;
+    background-color: transparent;
+}
+
+button:focus {
+  outline:none !important;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr fit-content(600px) 1fr;
+  grid-template-areas: 'sidebar profile other'
+}
+
+.item1{
+  grid-area: sidebar;
+  position: sticky;
+  top:0;
+  height: 100vh;
+  overflow-y: auto;
+  min-width: 100px;
+}
+
+.item2{
+  grid-area: profile;
+}
+
+.text-lighter{
+    color: rgb(136, 153, 166);
+}
+
+.text-white-bold{
+  color:white;
+  font-weight: 600;
+}

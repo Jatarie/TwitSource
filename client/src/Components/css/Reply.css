@@ -1,0 +1,15 @@
+.replies-reply-header > span > span{
+    padding-right:5px;
+}
+
+.reply-grid{
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: min-content 1fr;
+}
+
+#stuff-what{
+    border-left: 2px solid rgb(73, 86, 97);
+    height: 100px;
+    position: relative;
+}

@@ -1,0 +1,90 @@
+.profile-details{
+    color:rgb(136, 153, 166);
+    border: 1px solid rgb(56, 68, 77);
+    border-bottom: none;
+}
+
+.profile-content{
+    padding:0 0 20px 10px;
+}
+
+.profile-detail{
+    padding-left:10px;
+}
+
+.username{
+    padding-top:50px;
+    color:white;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.follower-count{
+    padding-left:15px;
+}
+
+.follow-number{
+    color:white;
+    font-weight: 600;
+}
+
+.join-date{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.circular-image{
+    overflow: hidden;
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    border:6px solid rgb(22, 45, 64);
+    position: absolute;
+    bottom:-50px;
+    left:10px;
+}
+
+.overlay{
+    position:relative
+}
+
+.banner-image{
+    max-width:600px;
+}
+
+
+/* this is bad, probably replace, breaks when screen width is low */
+#page-loading-overlay{
+    position: absolute;
+    width: 600px;
+    height: 100vh;
+    z-index: 100;
+    background-color:rgb(19, 27, 34);
+    border: 1px solid rgb(56, 68, 77);
+}
+
+#spin-animation {
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    position: absolute;
+    top: 40%;
+    left: 38%; 
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
+  #infinite-scroll{
+    height: 800px;
+    position: static;
+    background-color:rgb(19, 27, 34);
+    border: 1px solid rgb(56, 68, 77);
+  }
