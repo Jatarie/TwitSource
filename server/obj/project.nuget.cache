@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "moG2m8pCQtFzKAuA5apXs0eaThQ+gvWJf1HUS02pFNXTIJ1d1nGCOmdkq/qESc229GHTLdngma6BkEyMcNJSgA==",
+  "success": true,
+  "projectFilePath": "E:\\Drive\\Programming\\Twit\\server\\server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matt\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

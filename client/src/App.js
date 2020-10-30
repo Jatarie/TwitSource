@@ -5,7 +5,7 @@ import Sidebar from './Components/js/sidebar';
 import UserProfile from './Components/js/UserProfile';
 import Sidebarmoremenu from './Components/js/Sidebarmore';
 import Replies from './Components/js/Replies'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link, HashRouter } from "react-router-dom";
 
 function App() {
     return (
@@ -15,10 +15,10 @@ function App() {
                     <Sidebar />
                 </div>
                 <div className={"item2"}>
-                    <Replies></Replies>
-                    {/* <Router>
+                    {/* <Replies></Replies> */}
+                    <HashRouter>
                         <Route path={`/:user`} component={UserProfile} />
-                    </Router> */}
+                    </HashRouter>
 
                 </div>
             </div>
